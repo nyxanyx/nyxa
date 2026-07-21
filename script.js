@@ -160,23 +160,18 @@ document.querySelector(".heroRight").style.transform="translateX(0)";
 const copyBtn = document.getElementById("copyBtn");
 
 if (copyBtn) {
-
     copyBtn.addEventListener("click", () => {
 
-        const contract = document.getElementById("0x34A69cCA478714b2Aea256d865899372aDa150D5");
+        const contract = document.getElementById("contract");
 
         navigator.clipboard.writeText(contract.value);
 
         copyBtn.textContent = "✅ Copied!";
 
         setTimeout(() => {
-
             copyBtn.textContent = "📋 Copy Address";
-
         }, 2000);
-
     });
-
 }
 // =========================
 // MOBILE MENU
