@@ -163,7 +163,7 @@ if (copyBtn) {
 
     copyBtn.addEventListener("click", () => {
 
-        const contract = document.getElementById("contract");
+        const contract = document.getElementById("0x34A69cCA478714b2Aea256d865899372aDa150D5");
 
         navigator.clipboard.writeText(contract.value);
 
